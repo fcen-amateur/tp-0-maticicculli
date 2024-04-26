@@ -1,5 +1,6 @@
 import seaborn.objects as so
 from gapminder import gapminder
+import pandas as pd
 
 
 def plot():
@@ -28,7 +29,7 @@ def plot():
         .add (so.Bar())
         .label(title = "Población promedio por pais en cada continente", x = "Continentes", y = "Población promedio por pais (1.0 = 100 Millones)" )
         )
-    )
+
     return dict(
         descripcion="Este grafico muestra la diferencia que hay entre la cantidad promedio de poblacion por pais en cada continente",
         autor="Matias Cicculli",
